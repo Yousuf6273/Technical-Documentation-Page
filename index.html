@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a>
+      <a class="nav-link" href="#Objects_and_Arrays">Objects and Arrays</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</p>
+        <p>It is most well-known as the scripting language for Web pages, but it is also used in many non-browser environments such as Node.js.</p>
+        <p>JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative programming styles.</p>
+        <code>console.log("Hello, World!");</code>
+        <ul>
+          <li>JavaScript runs in the browser</li>
+          <li>JavaScript can manipulate the DOM</li>
+          <li>JavaScript supports asynchronous programming</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header>Variables and Data Types</header>
+        <p>JavaScript has three ways to declare variables: var, let, and const.</p>
+        <p>The let keyword declares a block-scoped variable, optionally initializing it to a value.</p>
+        <p>The const keyword creates a constant reference to a value. Constants cannot be reassigned.</p>
+        <code>let name = "Alice";
+const age = 30;
+var isStudent = true;</code>
+        <code>typeof "hello"; // returns string
+typeof 42;      // returns number
+typeof true;    // returns boolean</code>
+        <ul>
+          <li>String: text values enclosed in quotes</li>
+          <li>Number: integer and floating point numbers</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>A function in JavaScript is a block of code designed to perform a particular task.</p>
+        <p>Functions are executed when they are called. You can pass data into a function as parameters.</p>
+        <p>Arrow functions provide a shorter syntax for writing function expressions and do not have their own this context.</p>
+        <code>function greet(name) {
+  return "Hello, " + name + "!";
+}
+console.log(greet("Alice"));</code>
+        <ul>
+          <li>Functions can return values using the return statement</li>
+          <li>Arrow functions use the => syntax for concise function definitions</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>Control flow statements allow you to control the order in which code executes based on conditions.</p>
+        <p>The if statement executes a block of code if a specified condition is true.</p>
+        <p>The for loop repeats a block of code a number of times based on a condition.</p>
+        <code>if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}</code>
+        <ul>
+          <li>if/else statements handle conditional logic</li>
+          <li>for and while loops handle repetition</li>
+          <li>switch statements handle multiple conditions efficiently</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Objects_and_Arrays">
+        <header>Objects and Arrays</header>
+        <p>Objects in JavaScript are collections of key-value pairs used to store related data.</p>
+        <p>Arrays are ordered lists of values and can contain any type of data including other arrays.</p>
+        <p>Both objects and arrays are fundamental data structures in JavaScript programming.</p>
+        <code>const person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+};
+console.log(person.name);</code>
+        <ul>
+          <li>Objects store data as named properties</li>
+          <li>Arrays use numeric indices starting at zero</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
